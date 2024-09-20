@@ -3,6 +3,10 @@ import { RxCaretDown } from "react-icons/rx";
 import { SiSwiggy } from "react-icons/si";
 import { IoIosSearch } from "react-icons/io";
 import { BiSolidOffer } from "react-icons/bi";
+import { IoMdHelpCircleOutline } from "react-icons/io";
+import { FiUser } from "react-icons/fi";
+import { FaCartPlus } from "react-icons/fa6";
+
 
 
 
@@ -17,6 +21,32 @@ const Header = () => {
   const hideSideMenu = () => {
     setToggle(false);
   }
+
+  const links = [
+    {
+      icon: <IoIosSearch />,
+      name: "Search",
+    },
+    {
+      icon: <BiSolidOffer />,
+      name: "Offer",
+      new : "New",
+    },
+    {
+      icon: <IoMdHelpCircleOutline/>,
+      name: "Help"
+    },
+    {
+      icon: <FiUser/>,
+      name: "Sign In",
+    },
+    {
+      icon: <FaCartPlus/>,
+      name: "Cart"
+    }
+
+  ]
+
   return (
     <>
       <div className="black-overlay h-full w-full fixed duration-500" onClick={hideSideMenu} style={{
@@ -28,32 +58,26 @@ const Header = () => {
         left: toggle ? "0%" : "-100%"
       }}></div>
       <header className='p-[15px] shadow-xl' >
-        <div className='max-w-[1200px] mx-auto border border-red-400 flex items-center'>
+        <div className='max-w-[1200px] mx-auto  flex items-center'>
           <div className='w-[50px]  mr-6'>
             <SiSwiggy className='w-full text-orange-400 text-5xl mr-4' />
           </div>
           <div className="">
             <span className='font-bold border-b-[3px] border-[black] mr-1'>Ratanada</span>Jodhpur, Rajasthan, India <RxCaretDown onClick={showSideMenu} fontSize={25} className='inline font-bold  text-[#fc8019] bold cursor-pointer' />
           </div>
-          <nav className='flex list-none gap-5 ml-auto font-semibold text-[18px]'>
-            <li className='flex items-center gap-2'>
-              <IoIosSearch />
-              Search
-            </li>
-            <li className='flex items-center gap-2'>
-              <BiSolidOffer/>
-              Offers
-            </li>
-            <li>
-              Help
-            </li>
-            <li>
-              Sign In
-            </li>
-            <li>
-              Cart
-            </li>
+          <nav className='flex list-none gap-8 ml-auto font-semibold text-[18px]'>
+            {
+              links.map((link, idx) => {
+                return (
+                  <li key={idx} className='flex items-center gap-2 hover:text-[#fc8019] cursor-pointer'>
+                    {link.icon}
+                    {link.name}
+                    <sup>{link.new}</sup>
+                  </li>
+                )
 
+              })
+            }
           </nav>
         </div>
 
