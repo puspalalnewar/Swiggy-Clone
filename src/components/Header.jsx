@@ -30,18 +30,18 @@ const Header = () => {
     {
       icon: <BiSolidOffer />,
       name: "Offer",
-      new : "New",
+      new: "New",
     },
     {
-      icon: <IoMdHelpCircleOutline/>,
+      icon: <IoMdHelpCircleOutline />,
       name: "Help"
     },
     {
-      icon: <FiUser/>,
+      icon: <FiUser />,
       name: "Sign In",
     },
     {
-      icon: <FaCartPlus/>,
+      icon: <FaCartPlus />,
       name: "Cart"
     }
 
