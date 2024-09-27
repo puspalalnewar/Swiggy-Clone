@@ -93,7 +93,11 @@ const Category = () => {
     const [slide, setSlide] = useState(0);
 
     const nextSlide = () => {
+        if (slide >= 15) {
+            return;
+        }
         setSlide(slide + 3);
+        // console.log(data.length);
     }
     const prevSlide = () => {
         if (slide <= 0) {
@@ -119,16 +123,15 @@ const Category = () => {
                 {
                     data.map((food, idx) => {
                         return (
-                            <div key={idx} className=" shrink-0" style={{
+                            <div key={idx} className="w-[200px] shrink-0 duration-500" style={{
                                 transform: `translateX(-${slide * 100}%)`
                             }}>
-                                <img className='rounded-full aspect-[3/4]' src={food.image} alt="" />
-                                <p className='font-bold'>{food.path}</p>
+                                <img className='rounded-full aspect-[9/16]' src={food.image} alt="" />
+                                <p className='font-bold mr-12'>{food.path}</p>
                             </div>
                         )
                     })
                 }
-                {/* <img src={foods} alt="" /> */}
             </div>
         </div>
     )
