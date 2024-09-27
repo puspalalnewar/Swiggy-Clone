@@ -1,1 +1,1 @@
-# This is a Swiggy Clone using React Js.
+# This is a Swiggy-Clone using React Js and Tailwind CSS.
