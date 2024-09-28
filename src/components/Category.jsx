@@ -112,7 +112,7 @@ const Category = () => {
     return (
         <div className='max-w-[1200px] mx-auto mt-4'>
             <div className='flex items-center justify-between'>
-                <div className='text-[20px] font-bold'>What's on your mind?</div>
+                <div className='text-[25px] font-bold'>What's on your mind?</div>
                 <div className='flex'>
                     <div onClick={prevSlide} className='flex justify-center items-center cursor-pointer w-[40px] h-[40px] bg-[#e2e2e7] rounded-full mx-2'><FaArrowLeft /></div>
                     <div onClick={nextSlide} className='flex justify-center items-center  cursor-pointer w-[40px] h-[40px] bg-[#e2e2e7] rounded-full mx-2'><FaArrowRight /></div>
@@ -133,6 +133,7 @@ const Category = () => {
                     })
                 }
             </div>
+            <hr className='my-10 border-[2px]'/>
         </div>
     )
 }
