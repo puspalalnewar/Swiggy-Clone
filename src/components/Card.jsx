@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaStar } from "react-icons/fa";
+// import mixture from '../images/res-mixture.jpg'
 
 const Card = (props) => {
 
@@ -11,7 +13,19 @@ const Card = (props) => {
             {props.offer}
         </div>
       </div>
-      
+      <div className='flex mt-2 text-2xl font-bold'>
+        {props.title}
+      </div>
+      <div className='flex items-center gap-2'>
+        <FaStar className='text-green-500 inline'/> {props.rating}
+        <span className='ml-2'> {props.minTime} - {props.maxTime} Mins </span>
+      </div>
+      <div className='flex'>
+        {props.shopName}
+      </div>
+      <div className='flex'>
+      {props.place}
+      </div>
     </div>
   )
 }

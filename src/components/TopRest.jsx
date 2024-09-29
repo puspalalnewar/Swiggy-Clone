@@ -11,30 +11,72 @@ const TopRest = () => {
         {
             name: mixture,
             offer : "Items at ₹ 179",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
         {
             name: fish,
             offer : "₹ 50 OF ABOVE at ₹ 199",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
         {
             name: fruites,
             offer : "₹ 70 OF ABOVE at ₹ 249",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
         {
             name: mixture,
             offer : "₹ 80 OF ABOVE at ₹ 349",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
         {
             name: mixture,
             offer : "Items at ₹ 179",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
         {
             name: mixture,
             offer : "Items at ₹ 179",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
         {
             name: mixture,
             offer : "Items at ₹ 179",
+            title : "Pizza Hut",
+            rating : 4.2,
+            minTime : 30,
+            maxTime : 45,
+            shopName : "Pizzas",
+            place : "New Jodhpur",
         },
     ]
 
@@ -53,7 +95,7 @@ const TopRest = () => {
                 {
                     data.map((val, idx) => {
                         return (
-                            <Card {...val} id = {idx}/>
+                            <Card {...val} image = {val.name} id = {idx}/>
                         )
                     })
                 }
