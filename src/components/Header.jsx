@@ -57,7 +57,7 @@ const Header = () => {
       <div className='w-[500px] h-full bg-white absolute duration-300' style={{
         left: toggle ? "0%" : "-100%"
       }}></div>
-      <header className='p-[15px] shadow-xl' >
+      <header className='p-[15px] shadow-xl sticky top-0 z-[9999] bg-white' >
         <div className='max-w-[1200px] mx-auto  flex items-center'>
           <div className='w-[50px]  mr-6'>
             <SiSwiggy className='w-full text-orange-400 text-5xl mr-4' />
@@ -65,7 +65,7 @@ const Header = () => {
           <div className="">
             <span className='font-bold border-b-[3px] border-[black] mr-1'>Ratanada</span>Jodhpur, Rajasthan, India <RxCaretDown onClick={showSideMenu} fontSize={25} className='inline font-bold  text-[#fc8019] bold cursor-pointer' />
           </div>
-          <nav className='flex list-none gap-8 ml-auto font-semibold text-[18px]'>
+          <nav className='hidden md:flex list-none gap-8 ml-auto font-semibold text-[18px]'>
             {
               links.map((link, idx) => {
                 return (

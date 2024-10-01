@@ -133,7 +133,7 @@ const Category = () => {
                     })
                 }
             </div>
-            <hr className='my-10 border-[2px]'/>
+            <hr className='my-10 border-[2px]' />
         </div>
     )
 }

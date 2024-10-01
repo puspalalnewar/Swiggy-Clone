@@ -1,122 +1,123 @@
-import {React, useState} from 'react'
+import { React, useState } from 'react'
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Card from './Card';
 import mixture from '../images/res-mixture.jpg'
 import fish from '../images/res-fish.jpeg'
 import fruites from '../images/res-fruites.jpeg'
 
+
 const TopRest = () => {
 
     const data = [
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: fish,
-            offer : "₹ 50 OF ABOVE at ₹ 199",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "₹ 50 OF ABOVE at ₹ 199",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: fruites,
-            offer : "₹ 70 OF ABOVE at ₹ 249",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "₹ 70 OF ABOVE at ₹ 249",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "₹ 80 OF ABOVE at ₹ 349",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "₹ 80 OF ABOVE at ₹ 349",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
         {
             name: mixture,
-            offer : "Items at ₹ 179",
-            title : "Pizza Hut",
-            rating : 4.2,
-            minTime : 30,
-            maxTime : 45,
-            shopName : "Pizzas",
-            place : "New Jodhpur",
+            offer: "Items at ₹ 179",
+            title: "Pizza Hut",
+            rating: 4.2,
+            minTime: 30,
+            maxTime: 45,
+            shopName: "Pizzas",
+            place: "New Jodhpur",
         },
     ]
 
@@ -146,24 +147,26 @@ const TopRest = () => {
                     <div onClick={prevSlide} className='flex justify-center items-center cursor-pointer w-[40px] h-[40px] bg-[#e2e2e7] rounded-full mx-2'><FaArrowLeft /></div>
                     <div onClick={nextSlide} className='flex justify-center items-center  cursor-pointer w-[40px] h-[40px] bg-[#e2e2e7] rounded-full mx-2'><FaArrowRight /></div>
                 </div>
-
             </div>
+
+
             <div className="flex gap-10 overflow-hidden" >
 
                 {
                     data.map((val, idx) => {
                         return (
                             <div className="box duration-500" style={{
-                                transform: `translateX(-${slide * 100}%)`}}>
-                                <Card {...val} image = {val.name} id = {idx} />
+                                transform: `translateX(-${slide * 100}%)`
+                            }}>
+                                <Card width="w-full md:w-[273px]" {...val} image={val.name} id={idx} />
                             </div>
-                            
+
                         )
                     })
                 }
 
             </div>
-            <hr className='my-10 border-[2px]'/>
+            <hr className='my-10 border-[2px]' />
         </div>
     )
 }
