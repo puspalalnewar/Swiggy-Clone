@@ -125,7 +125,7 @@ const Category = () => {
                         return (
                             <div key={idx} className="w-[200px] shrink-0 duration-500" style={{
                                 transform: `translateX(-${slide * 100}%)`
-                            }}>
+                                }}>
                                 <img className='rounded-full aspect-[9/16]' src={food.image} alt="" />
                                 <p className='font-bold mr-12'>{food.path}</p>
                             </div>

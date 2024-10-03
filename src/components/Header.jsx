@@ -51,11 +51,13 @@ const Header = () => {
     <>
       <div className="black-overlay h-full w-full fixed duration-500" onClick={hideSideMenu} style={{
         opacity: toggle ? 1 : 0,
-        visibility: toggle ? 'visible' : 'hidden'
+        visibility: toggle ? 'visible' : 'hidden',
+        
       }}></div>
 
       <div className='w-[500px] h-full bg-white absolute duration-300' style={{
-        left: toggle ? "0%" : "-100%"
+        left: toggle ? "0%" : "-100%",
+        zIndex : 9999999,
       }}></div>
       <header className='p-[15px] shadow-xl sticky top-0 z-[9999] bg-white' >
         <div className='max-w-[1200px] mx-auto  flex items-center'>

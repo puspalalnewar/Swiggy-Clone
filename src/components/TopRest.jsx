@@ -149,16 +149,15 @@ const TopRest = () => {
                 </div>
             </div>
 
-
             <div className="flex gap-10 overflow-hidden" >
 
                 {
                     data.map((val, idx) => {
                         return (
-                            <div className="box duration-500" style={{
+                            <div id={idx} className="box duration-500" style={{
                                 transform: `translateX(-${slide * 100}%)`
                             }}>
-                                <Card width="w-full md:w-[273px]" {...val} image={val.name} id={idx} />
+                                <Card width="w-full md:w-[273px]" {...val} image={val.name} />
                             </div>
 
                         )
